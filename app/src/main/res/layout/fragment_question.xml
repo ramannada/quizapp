@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Siapa penemu rumus energi?"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:padding="30dp"
+        android:background="@drawable/oval_background"
+        android:layout_alignParentTop="true"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_question">
+        <RadioButton
+            android:id="@+id/radio_answer_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Albert Einstain"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_answer_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Thomas Alfa Edisson"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_answer_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Galileo"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_answer_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Thomas Alfa Edisson"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/lanjut"/>
+
+
+</RelativeLayout>
