@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.blogspot.ramannada.quizapp.WelcomeFragment"
+    tools:context="com.blogspot.ramannada.quizapp.user.WelcomeActivity"
     android:gravity="center_horizontal"
-    android:padding="10dp">
+    android:padding="20dp">
 
 
     <TextView
@@ -16,7 +17,7 @@
         android:layout_marginTop="25dp"
         android:text="Selamat Datang di QuizApp"
         android:layout_alignParentTop="true"
-        android:textSize="25sp"
+        android:textSize="24sp"
         android:textStyle="bold"/>
 
     <TextView
@@ -25,8 +26,8 @@
         android:textAlignment="center"
         android:layout_below="@id/tv_greeting"
         android:text="isikan nama"
-        android:textSize="25sp"
-        android:textStyle="bold"/>
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_name"

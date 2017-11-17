@@ -12,8 +12,8 @@ public class SharedData {
     private static SharedPreferences.Editor editor;
     private final String DATA_NAME = "com.blogspot.ramannada.quizapp.shareddata";
     private final int PREFERENCES_MODE = 0;
-    public static String PAGE = "quiznumber";
     private static String NAME = "name";
+    private static String SCORE = "score";
     public static SharedData sharedData;
 
     public SharedData(Context context) {
@@ -29,16 +29,6 @@ public class SharedData {
         return sharedData;
     }
 
-
-    public static void setPage(int i) {
-        editor.putInt(PAGE, i);
-        editor.commit();
-    }
-
-    public int getPage() {
-        return sharedPreferences.getInt(PAGE, 0);
-    }
-
     public void setName(String s) {
         editor.putString(NAME, s);
         editor.commit();
@@ -46,5 +36,20 @@ public class SharedData {
 
     public String getName() {
         return sharedPreferences.getString(NAME, "");
+    }
+
+    public int getScore() {
+        return sharedPreferences.getInt(SCORE, 0);
+    }
+
+    public void addScore(int i) {
+        int score = getScore() + i;
+        editor.putInt(SCORE, score);
+        editor.commit();
+    }
+
+    public void clearScore() {
+        editor.putInt(SCORE, 0);
+        editor.commit();
     }
 }

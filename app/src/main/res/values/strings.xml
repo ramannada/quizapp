@@ -4,4 +4,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lanjut">Lanjut</string>
+    <string name="hasil_akhir">Hasil Akhir</string>
+    <string name="coba_lagi">coba lagi</string>
+    <string name="simpan_hasil">simpan hasil</string>
 </resources>
